@@ -1,0 +1,68 @@
+@media only screen and (max-width: 1300px) {
+    .sponsorsDisp {
+        height: 85vh;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .sponsorsDisp {
+        height: 105vh;
+    }
+
+    .aboutDisp {
+        height: 70vh;
+    }
+
+    .aboutDisp ul li span {
+        display: block;
+        height: 5vh;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .quote {
+        text-align: center;
+        margin-bottom: 0px;
+        margin-right: 0px;
+    }
+
+    .ul1 {
+        flex-direction: column;
+    }
+
+    nav {
+        height: 150px;
+        position: static;
+    }
+
+    .ul1 li {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .aboutDisp {
+        height: 121vh;
+    }
+
+    .aboutDisp ul li span {
+        height: 13vh;
+    }
+
+    footer {
+        height: 16vh;
+    }
+
+    .mr {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}

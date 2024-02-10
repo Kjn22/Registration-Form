@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fill</title>
+    <link rel="stylesheet" href="static/style1.css">
+</head>
+
+<body>
+    <form action="/register" method="post">
+        <div class="completeForm">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name" name="name" minlength="6" required>
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Enter Your Age" name="age" required>
+            </div>
+            <div class="form-group">
+                <input type="phone" placeholder="Enter Your Contact No." name="phone" minlength="10" maxlength="10"
+                    pattern="\d{10}" title="Enter a valid 10 digit phone no." required>
+            </div>
+            <div class="form-group">
+                <span class="types">Role:</span><select name="role">
+                    <option value="batter">Batter</option>
+                    <option value="bowler">Bowler</option>
+                    <option value="allrounder">All-rounder</option>
+                    <option value="wicketkeeper">Wicketkeeper</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <span class="types">Batting Style*:</span><select name="batStyle">
+                    <option value="none">None</option>
+                    <option value="lefthanded">Left-handed</option>
+                    <option value="righthanded">Right-handed</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <span class="types">Bowling Style*:</span><select name="bowlStyle">
+                    <option value="none">None</option>
+                    <option value="leftarmfast">Left-Arm-Fast</option>
+                    <option value="rightarmfast">Right-Arm-Fast</option>
+                    <option value="offspin">Off-Spin</option>
+                    <option value="legspin">Leg-Spin</option>
+                </select>
+            </div>
+            <div class="types1">*(If Applicable)</div>
+            <div>
+                <button class="btn" type="submit">Submit</input>
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
